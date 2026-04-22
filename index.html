@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT Image 2.0 - AI 图像生成</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <aside class="sidebar">
+            <button class="new-chat"><i class="fas fa-plus"></i> 新建对话</button>
+            <div class="history-list">
+                <div class="history-item active">赛博朋克城市...</div>
+                <div class="history-item">梦幻森林 4K...</div>
+            </div>
+            <div class="user-menu">
+                <div class="user-info">
+                    <img src="https://via.placeholder.com/32" alt="avatar">
+                    <span>Qianjun Zhao</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="chat-area">
+            <header class="top-nav">
+                <span>ChatGPT Images 2.0</span>
+                <i class="fas fa-share-alt"></i>
+            </header>
+
+            <section class="messages" id="chat-window">
+                <div class="message user">
+                    <div class="content">帮我画一张在月球上喝咖啡的宇航员，写实风格。</div>
+                </div>
+                <div class="message assistant">
+                    <div class="content">
+                        <p>这是为您生成的月球咖啡时间：</p>
+                        <div class="image-grid">
+                            <img src="https://via.placeholder.com/512" alt="generated image" class="gen-img">
+                        </div>
+                        <div class="image-actions">
+                            <button><i class="fas fa-download"></i> 下载</button>
+                            <button><i class="fas fa-redo"></i> 重画</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="input-container">
+                <div class="input-wrapper">
+                    <i class="fas fa-paperclip attach-icon"></i>
+                    <textarea placeholder="描述你想生成的图像..." rows="1"></textarea>
+                    <button class="send-btn"><i class="fas fa-arrow-up"></i></button>
+                </div>
+                <p class="disclaimer">生成的图像可能存在偏差，请以实际为准。</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
